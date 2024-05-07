@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="text-center"> Monografias </h1>
+
+<ul class="list-group">
+    {% for texto in monografias %}
+    <li class="list-group-item">
+        <strong>Titulo: </strong> {{ texto.titulo }} <br>
+        <strong>Autor: </strong> {{ texto.autor }} <br>
+        <strong>Orientador: </strong> {{ texto.orientador }} <br>
+        <strong>Coorientador: </strong> {{ texto.coorientador }} <br>
+        <strong>Resumo: </strong> {{ texto.resumo }} <br>
+        <strong>Palavras Chaves: </strong> {{ texto.palavras_chave }} <br>
+        <strong>Data Entrega: </strong> {{ texto.data_entrega }} <br>
+        <strong>Arquivo: </strong> <a href="{{texto.arquivo.url}}">Arquivo</a> <br>
+        <strong>Banca: </strong> <br>
+        <ul>
+            {% for related_object in texto.banca.all %}
+                <li>{{ related_object.nome }}</li>
+            {% empty %}
+                <li>Nenhum objeto relacionado encontrado.</li>
+            {% endfor %}
+        </ul>
+        <strong>Nota final: </strong> {{ texto.nota_final }} <br>
+        <strong>Área: </strong> {{ texto.area_concentração }} <br>
+    </li>
+
+    {% endfor %}
+
+</ul>
+
+{% endblock %}
+

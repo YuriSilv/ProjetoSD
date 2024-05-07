@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="text-center"> Equipe </h1>
+
+<ul class="list-group">
+    {% for pesquisador in pesquisadores %}
+    <li class="list-group-item">
+        <strong>Nome: </strong> {{ pesquisador.nome }} <br>
+        <strong>Titulação: </strong> {{ pesquisador.nivel }} <br>
+        <strong>Lattes: </strong> {{ pesquisador.lattes }} <br>
+        <strong>Linkedin: </strong> {{ pesquisador.linkedin }} <br>
+        <strong>Research Gate: </strong> {{ pesquisador.researchgate }} <br>
+        <strong>E-mail: </strong> {{ pesquisador.email }} <br>
+        <strong>Cargo: </strong> {{ pesquisador.get_cargo_display }} <br>
+    </li>
+
+    {% endfor %}
+
+</ul>
+
+{% endblock %}
+

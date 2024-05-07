@@ -1,0 +1,10 @@
+altgraph==0.17.4
+cffi==1.16.0
+cryptography==42.0.5
+cx_Freeze==6.15.16
+packaging==24.0
+patchelf==0.17.2.1
+pyAesCrypt==6.1.1
+pycparser==2.22
+pyinstaller==6.6.0
+pyinstaller-hooks-contrib==2024.4
