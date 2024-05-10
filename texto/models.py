@@ -17,9 +17,9 @@ def validar_extensao_texto(value):
 class Monografia(models.Model):
     titulo = models.CharField(max_length=255, verbose_name='titulo')
     
-    autor = models.ForeignKey(Pesquisador, 
-                              on_delete=models.CASCADE, 
-                              related_name='autor_monografias')
+    autor = models.OneToOneField(Pesquisador, 
+                                 on_delete=models.CASCADE, 
+                                 related_name='autor_monografias')
     
     orientador = models.ForeignKey(Pesquisador, 
                                    on_delete=models.CASCADE, 
@@ -49,7 +49,7 @@ class Monografia(models.Model):
                                    blank=True, 
                                    null=True, 
                                    verbose_name='banca', 
-                                   limit_choices_to={'cargo':'PROFESSOR'})
+                                   limit_choices_to={'cargo':'PROFESSOR', 'cargo':'TECNICO'})
     
     nota_final = models.FloatField(max_length=3, 
                                    blank=True, 
