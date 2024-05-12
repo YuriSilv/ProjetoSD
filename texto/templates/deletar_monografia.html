@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>Você está prestes a excluir a monografia "{{ monografia.titulo }}". Tem certeza?</p>
+<form action = "" method = "post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="submit" value="Confirmar Exclusão">
+</form>
+{% endblock %}
+

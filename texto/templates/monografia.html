@@ -25,6 +25,9 @@
         </ul>
         <strong>Nota final: </strong> {{ texto.nota_final }} <br>
         <strong>Área: </strong> {{ texto.area_concentração }} <br>
+        
+        <a href="{% url 'editar_monografia' texto.id %}" class="btn btn-primary">Editar</a>
+        <a href="{% url 'deletar_monografia' texto.id %}" class="btn btn-danger">Excluir</a>
     </li>
 
     {% endfor %}

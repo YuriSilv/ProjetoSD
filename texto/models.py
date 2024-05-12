@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Q
 from django.utils import timezone
 from equipe.models import Pesquisador
 from django.core.validators import FileExtensionValidator
@@ -19,7 +20,8 @@ class Monografia(models.Model):
     
     autor = models.OneToOneField(Pesquisador, 
                                  on_delete=models.CASCADE, 
-                                 related_name='autor_monografias')
+                                 related_name='autor_monografias',
+                                 limit_choices_to={'cargo':'ALUNO'})
     
     orientador = models.ForeignKey(Pesquisador, 
                                    on_delete=models.CASCADE, 
@@ -49,7 +51,7 @@ class Monografia(models.Model):
                                    blank=True, 
                                    null=True, 
                                    verbose_name='banca', 
-                                   limit_choices_to={'cargo':'PROFESSOR', 'cargo':'TECNICO'})
+                                   limit_choices_to=Q(cargo='PROFESSOR') | Q(cargo='TECNICO'))
     
     nota_final = models.FloatField(max_length=3, 
                                    blank=True, 
