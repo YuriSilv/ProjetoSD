@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'home',
     'equipe',
     'texto',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
