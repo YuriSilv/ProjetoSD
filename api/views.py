@@ -1,12 +1,25 @@
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from equipe.models import Pesquisador
 from texto.models import Monografia
 from .serializers import PesquisadorSerializer, MonografiaSerializer
 from rest_framework import status
 from drf_yasg.utils import swagger_auto_schema
+from django.contrib.auth.models import User
+from rest_framework.authtoken.models import Token
+from django.http import JsonResponse
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
+
+def get_token(request):
+    user = request.user
+    token, created = Token.objects.get_or_create(user=user)
+
+    return JsonResponse({'token': token.key, 'user': user.username, 'password': user.password})
 
 @api_view(['GET'])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
 @swagger_auto_schema(
     operation_description="Retorna todos os pesquisadores",
     responses={200: 'Success'},
