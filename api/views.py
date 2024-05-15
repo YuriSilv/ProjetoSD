@@ -74,18 +74,22 @@ def update_data_pesquisador(request, id):
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-
-
 @api_view(['GET'])
 @swagger_auto_schema(
     operation_description="Retorna todos os textos",
     responses={200: 'Success'},
-    summary="Lista dos textos",
+    operation_summary="Lista dos textos",
 )
 def get_data_monografia(request):
     monografia = Monografia.objects.all()
     serializer = MonografiaSerializer(monografia, many=True)
-    return Response(serializer.data)
+    if monografia:
+        status_request = 'sucesso'
+    else:
+        status_request = 'falha'
+
+    return Response({'status': status_request,
+                     'data':serializer.data})
 
 @api_view(['POST'])
 @swagger_auto_schema(
@@ -100,6 +104,8 @@ def add_data_monografia(request):
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 @api_view(['DELETE'])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
 @swagger_auto_schema(
     operation_description="Deleta uma Monografia, dado um ID",
     responses={200: 'Success'},
