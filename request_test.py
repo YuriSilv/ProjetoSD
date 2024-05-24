@@ -1,9 +1,9 @@
 import requests
 
-url = 'http://127.0.0.1:8000/api/pesquisadores/'
+url = 'http://127.0.0.1:8000/api/monografias/'
 
 headers = {
-    'Authorization': 'Token c0d00a2d1e0f79b94115747edef8c3ae320c1d7a',
+    'Authorization': 'Token aedd2a38c8a14db09b3af52d868254ba682ee976',
     'Content-Type': 'application/json',
 }
 
