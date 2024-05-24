@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash no Django</title>
+    <!-- Inclua os arquivos CSS e JS necessários para o Dash -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'dash.css' %}">
+    <script src="{% static 'dash.js' %}"></script>
+</head>
+<body>
+    <!-- Div onde o aplicativo Dash será renderizado -->
+    <div id="dash-container"></div>
+
+    <!-- Script para renderizar o aplicativo Dash -->
+    <script>
+        // Adicione o código JavaScript necessário para inicializar o aplicativo Dash
+        const dashApp = new Dash({
+            urlBasePathname: '/',
+            el: document.getElementById('dash-container'),
+            requestsPathnamePrefix: '/_dash-requests/',
+            namespace: 'dash_app'
+        });
+    </script>
+</body>
+</html>

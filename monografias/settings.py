@@ -32,7 +32,8 @@ INSTALLED_APPS = [
     'equipe',
     'texto',
     'drf_yasg',
-    'users'
+    'users',
+    'dashboard'
 ]
 
 REST_FRAMEWORK = {
