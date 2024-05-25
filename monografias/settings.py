@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'users',
     'dashboard',
-    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
+    'django_plotly_dash.apps.DjangoPlotlyDashConfig'
 ]
 
 REST_FRAMEWORK = {

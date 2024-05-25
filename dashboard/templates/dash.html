@@ -3,5 +3,10 @@
 {% block content %}
     {%load plotly_dash%}
 
-    {%plotly_app name="dash"%}
-{% endblock %}
+    <block>
+        <div>
+            {%plotly_app name="dash" ratio=0.45 %}
+        </div>
+    </block>
+    
+{% endblock %}      
