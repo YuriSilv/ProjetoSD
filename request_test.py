@@ -1,4 +1,5 @@
 import requests
+import pandas as pd
 
 url = 'http://127.0.0.1:8000/api/monografias/'
 
@@ -8,5 +9,5 @@ headers = {
 }
 
 response = requests.get(url, headers=headers)
-
-print(response.json())  # Exibe a resposta JSON da solicitação
+  # Exibe a resposta JSON da solicitação
+print(pd.DataFrame(response.json()['data']).columns)

@@ -33,7 +33,8 @@ INSTALLED_APPS = [
     'texto',
     'drf_yasg',
     'users',
-    'dashboard'
+    'dashboard',
+    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
 ]
 
 REST_FRAMEWORK = {
@@ -55,6 +56,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_plotly_dash.middleware.BaseMiddleware',
+    'django_plotly_dash.middleware.ExternalRedirectionMiddleware'
 ]
 
 ROOT_URLCONF = 'monografias.urls'
@@ -152,3 +155,6 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'email@gmail'
 EMAIL_HOST_PASSWORD = 'senha'
+
+#plotly
+X_FRAME_OPTIONS = 'SAMEORIGIN'
