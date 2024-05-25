@@ -10,6 +10,7 @@ from dash import dcc, html
 from dash.dependencies import Output, Input
 from django_plotly_dash import DjangoDash
 import plotly.express as px
+from . import utils
 
 def request_info_monografia(url_path: str):
     headers = {
@@ -46,27 +47,78 @@ app.layout = html.Div([
         placeholder='Selecione um Autor',
         style={'width': '50%', 'margin': 'auto'}
     ),
-    html.Img(id='wordcloud-image', style={'display': 'block', 'margin': 'auto'})
-])
+    dcc.Dropdown(
+        id='area-dropdown',
+        placeholder='Selecione uma Área de Concentração',
+        style={'width': '50%', 'margin': 'auto'}
+    ),
+    dcc.Dropdown(
+        id='advisor-dropdown',
+        placeholder='Selecione um Orientador',
+        style={'width': '50%', 'margin': 'auto'}
+    ),
+    html.Div([
+        html.Div([
+            html.Img(id='wordcloud-image', style={'max-width': '100%'})
+        ], style={'flex': '1', 'max-width': '50%', 'margin-right': '10px'}),
+        html.Div([
+            dcc.Graph(id='grade-histogram', style={'max-width': '100%'})
+        ], style={'flex': '1', 'max-width': '50%'})
+    ], style={'display': 'flex', 'justifyContent': 'center', 'alignItems': 'center', 'flexWrap': 'wrap'})
+], style={'max-width': '1200px', 'margin': 'auto'})
 
 @app.callback(
     Output('author-dropdown', 'options'),
     Input('author-dropdown', 'id')
 )
-def update_dropdown_options(_):
+def update_author_dropdown_options(_):
     df = load_dataframe('http://127.0.0.1:8000/api/monografias/')
     authors = df['autor'].unique()  # Supondo que 'autor' é a coluna com os nomes dos autores
     options = [{'label': 'Todos', 'value': 'Todos'}] + [{'label': author, 'value': author} for author in authors]
     return options
 
 @app.callback(
-    Output('wordcloud-image', 'src'),
-    Input('author-dropdown', 'value')
+    Output('area-dropdown', 'options'),
+    Input('area-dropdown', 'id')
 )
-def update_wordcloud(selected_author):
+def update_area_dropdown_options(_):
+    df = load_dataframe('http://127.0.0.1:8000/api/monografias/')
+    areas = df['area_concentração'].unique()  # Supondo que 'area_concentracao' é a coluna com as áreas de concentração
+    options = [{'label': 'Todas', 'value': 'Todas'}] + [{'label': area, 'value': area} for area in areas]
+    return options
+
+@app.callback(
+    Output('advisor-dropdown', 'options'),
+    Input('advisor-dropdown', 'id')
+)
+def update_advisor_dropdown_options(_):
+    df = load_dataframe('http://127.0.0.1:8000/api/monografias/')
+    advisors = df['orientador'].unique()  # Supondo que 'orientador' é a coluna com os nomes dos orientadores
+    options = [{'label': 'Todos', 'value': 'Todos'}] + [{'label': advisor, 'value': advisor} for advisor in advisors]
+    return options
+
+@app.callback(
+    [Output('wordcloud-image', 'src'),
+     Output('grade-histogram', 'figure')],
+    [Input('author-dropdown', 'value'),
+     Input('area-dropdown', 'value'),
+     Input('advisor-dropdown', 'value')]
+)
+def update_visualizations(selected_author, selected_area, selected_advisor):
     df = load_dataframe('http://127.0.0.1:8000/api/monografias/')
     if selected_author and selected_author != 'Todos':
         df = df[df['autor'] == selected_author]
+    if selected_area and selected_area != 'Todas':
+        df = df[df['area_concentração'] == selected_area]
+    if selected_advisor and selected_advisor != 'Todos':
+        df = df[df['orientador'] == selected_advisor]
+    
+    # Gerar Wordcloud
     text = ' '.join(df['resumo'])  # Supondo que 'resumo' é a coluna com texto das monografias
-    image_base64 = generate_wordcloud(text)
-    return 'data:image/png;base64,{}'.format(image_base64)
+    clean_text = utils.clean_text(text)
+    image_base64 = generate_wordcloud(clean_text)
+    
+    # Gerar Histograma
+    fig = px.histogram(df, x='nota_final', nbins=20, title='Distribuição das Notas Finais')
+    
+    return 'data:image/png;base64,{}'.format(image_base64), fig
