@@ -1,0 +1,295 @@
+{
+    "status": "sucesso",
+    "data": [
+        {
+            "id": 10,
+            "titulo": "Analise de Comentários",
+            "resumo": "Pesquisa de dados",
+            "palavras_chave": "ML, NLP",
+            "data_entrega": "2024-04-24T20:52:52-03:00",
+            "arquivo": "/media/aula03_DDdCnbk.pdf",
+            "nota_final": 100.0,
+            "area_concentração": "PLN",
+            "autor": 2,
+            "orientador": 5,
+            "coorientador": 1,
+            "banca": [
+                1,
+                5
+            ]
+        },
+        {
+            "id": 16,
+            "titulo": "Empreendedorismo e Inovação na Indústria da Cosmética: Uma Análise de Dados",
+            "resumo": "Este trabalho de conclusão de curso investiga o empreendedorismo na indústria da cosmética, utilizando análise de dados para identificar tendências de mercado e oportunidades de inovação. O estudo examina um conjunto de dados abrangente, incluindo métricas de vendas, preferências dos consumidores e estratégias de marketing digital de diversas empresas do setor. Através de técnicas avançadas de mineração de dados e análise estatística, são revelados padrões comportamentais e lacunas no mercado que novos empreendedores podem explorar. O trabalho também discute as implicações das descobertas para a tomada de decisões estratégicas, destacando a importância da personalização de produtos e da sustentabilidade. Conclui-se que a combinação de empreendedorismo com análise de dados oferece um caminho promissor para o crescimento e a competitividade na indústria da cosmética.",
+            "palavras_chave": "Dados; Empreendedorismo; cosmético",
+            "data_entrega": "2024-05-24T16:45:41-03:00",
+            "arquivo": "/media/aula03_8Z64TBT.pdf",
+            "nota_final": 100.0,
+            "area_concentração": "Análise de Dados",
+            "autor": 15,
+            "orientador": 1,
+            "coorientador": 12,
+            "banca": [
+                5,
+                8,
+                13
+            ]
+        },
+        {
+            "id": 17,
+            "titulo": "O Impacto do Desenvolvimento de Software nas Finanças Corporativas: Um Estudo de Caso",
+            "resumo": "Este trabalho de conclusão de curso explora como o desenvolvimento de software influencia as finanças corporativas, analisando um estudo de caso de uma empresa de médio porte do setor de tecnologia. O estudo examina a implementação de um novo sistema de gestão financeira desenvolvido internamente, avaliando os efeitos sobre a eficiência operacional, a precisão das previsões financeiras e a redução de custos. Através de uma abordagem metodológica mista, que inclui entrevistas com gestores e análise de dados financeiros antes e depois da implementação, são identificados os principais benefícios e desafios enfrentados pela empresa. Os resultados indicam que o desenvolvimento de software personalizado pode levar a uma significativa melhoria na gestão financeira, com impacto positivo na lucratividade e no controle orçamentário. O trabalho conclui destacando a importância de investir em soluções tecnológicas sob medida para otimizar os processos financeiros e fortalecer a competitividade no mercado.",
+            "palavras_chave": "Finanças; software; gestão",
+            "data_entrega": "2024-05-24T16:52:21-03:00",
+            "arquivo": "/media/aula03_BQEiviK.pdf",
+            "nota_final": 55.0,
+            "area_concentração": "Finanças",
+            "autor": 3,
+            "orientador": 13,
+            "coorientador": 12,
+            "banca": [
+                1,
+                12,
+                13
+            ]
+        },
+        {
+            "id": 18,
+            "titulo": "Desenvolvimento de Software Antivírus: Desafios e Estratégias de Implementação",
+            "resumo": "Este trabalho de conclusão de curso investiga o processo de desenvolvimento de software antivírus, focando nos desafios técnicos e nas estratégias de implementação eficazes. O estudo abrange uma revisão detalhada das ameaças cibernéticas contemporâneas, como malware, ransomware e phishing, e examina como essas ameaças evoluem constantemente, exigindo soluções de segurança igualmente dinâmicas e adaptáveis. A pesquisa inclui entrevistas com especialistas em cibersegurança e análise de casos de estudo de empresas que lideram o mercado de antivírus. São discutidas as etapas essenciais do desenvolvimento de antivírus, desde a fase de pesquisa e identificação de ameaças, passando pelo design de algoritmos de detecção e heurística, até a implementação de atualizações automáticas e testes rigorosos de penetração. O trabalho também aborda a importância de uma interface amigável e da capacidade de resposta rápida a novas ameaças. Conclui-se que o sucesso no desenvolvimento de software antivírus depende de uma combinação de conhecimento técnico aprofundado, inovação constante e uma abordagem proativa para a segurança cibernética.",
+            "palavras_chave": "Antivírus; software; sasi",
+            "data_entrega": "2024-05-24T16:55:30-03:00",
+            "arquivo": "/media/aula03_2O17PzV.pdf",
+            "nota_final": 78.0,
+            "area_concentração": "Segurança",
+            "autor": 16,
+            "orientador": 14,
+            "coorientador": 5,
+            "banca": [
+                4,
+                5,
+                14
+            ]
+        },
+        {
+            "id": 19,
+            "titulo": "Otimização de Sistemas Distribuídos: Técnicas e Aplicações",
+            "resumo": "Este trabalho de conclusão de curso explora as técnicas e aplicações na otimização de sistemas distribuídos, com foco em melhorar a eficiência e a performance desses sistemas em diferentes cenários de uso. O estudo começa com uma revisão das arquiteturas de sistemas distribuídos, incluindo clusters, grids e computação em nuvem, destacando suas características e desafios específicos. A pesquisa investiga métodos avançados de otimização, como balanceamento de carga, paralelismo de tarefas, algoritmos de consenso e técnicas de tolerância a falhas. A análise inclui a implementação de um protótipo de sistema distribuído otimizado, utilizado em um ambiente de teste para avaliar o desempenho em termos de latência, throughput e escalabilidade. Os resultados demonstram que a aplicação de técnicas de otimização pode levar a melhorias significativas na eficiência do sistema, reduzindo o tempo de resposta e aumentando a capacidade de processamento. O trabalho conclui enfatizando a importância da otimização contínua em sistemas distribuídos para atender às crescentes demandas de processamento e armazenamento, garantindo assim a robustez e a agilidade necessárias em ambientes computacionais modernos.",
+            "palavras_chave": "SD; software",
+            "data_entrega": "2024-05-24T16:58:34-03:00",
+            "arquivo": "/media/aula03_ksUxWlv.pdf",
+            "nota_final": 100.0,
+            "area_concentração": "SD",
+            "autor": 7,
+            "orientador": 5,
+            "coorientador": 14,
+            "banca": [
+                4,
+                5,
+                6
+            ]
+        },
+        {
+            "id": 20,
+            "titulo": "Desenvolvimento de Software para Gestão de Criptoativos: Desafios e Oportunidades",
+            "resumo": "Este trabalho de conclusão de curso examina o desenvolvimento de software especializado para a gestão de criptoativos, abordando os desafios e as oportunidades presentes nesse campo emergente. O estudo começa com uma introdução ao universo dos criptoativos, incluindo criptomoedas e tokens digitais, e sua crescente importância no mercado financeiro global. A pesquisa analisa as principais funcionalidades requeridas em softwares de gestão de criptoativos, como segurança de transações, armazenamento seguro, integração com exchanges, e ferramentas de análise de mercado. São discutidos os desafios técnicos, como a implementação de protocolos de segurança avançados, a proteção contra ataques cibernéticos, e a conformidade com regulamentos internacionais. Além disso, o trabalho investiga casos de estudo de softwares existentes, destacando inovações e melhores práticas. Através do desenvolvimento de um protótipo de software, são demonstradas soluções práticas para alguns dos principais desafios identificados. O trabalho conclui que, apesar das complexidades envolvidas, o desenvolvimento de software para gestão de criptoativos oferece vastas oportunidades, promovendo a democratização do acesso financeiro e a inovação tecnológica no setor financeiro.",
+            "palavras_chave": "SD; software; finanças",
+            "data_entrega": "2024-05-24T17:00:21-03:00",
+            "arquivo": "/media/aula03_ZI5BCJR.pdf",
+            "nota_final": 15.0,
+            "area_concentração": "Finanças",
+            "autor": 9,
+            "orientador": 13,
+            "coorientador": 5,
+            "banca": [
+                5,
+                12,
+                13
+            ]
+        },
+        {
+            "id": 21,
+            "titulo": "Desenvolvimento de Software para Internet das Coisas (IoT): Desafios e Soluções",
+            "resumo": "Este trabalho de conclusão de curso aborda o desenvolvimento de software para dispositivos da Internet das Coisas (IoT), explorando os desafios técnicos e as soluções necessárias nesse contexto. O estudo inicia com uma análise das características da IoT, incluindo a diversidade de dispositivos, a comunicação entre eles e a gestão de dados em larga escala. São discutidos os desafios específicos enfrentados no desenvolvimento de software para IoT, como a segurança dos dados, a interoperabilidade entre dispositivos de diferentes fabricantes, e a eficiência energética. A pesquisa inclui a revisão de técnicas e ferramentas de desenvolvimento, como plataformas de IoT, protocolos de comunicação e padrões de segurança. Através da implementação de um sistema de IoT em um ambiente de teste, são demonstradas soluções práticas para superar esses desafios. O trabalho conclui ressaltando a importância do desenvolvimento de software robusto e escalável para impulsionar o avanço da Internet das Coisas e sua aplicação em diversos setores.",
+            "palavras_chave": "IoT; Software",
+            "data_entrega": "2024-05-25T10:52:14-03:00",
+            "arquivo": "/media/aula03_UU7zk8G.pdf",
+            "nota_final": 55.0,
+            "area_concentração": "IoT",
+            "autor": 17,
+            "orientador": 5,
+            "coorientador": 14,
+            "banca": [
+                4,
+                5,
+                14
+            ]
+        },
+        {
+            "id": 22,
+            "titulo": "Computação em Nuvem e Segurança da Informação: Desafios e Estratégias",
+            "resumo": "Este trabalho de conclusão de curso investiga a interseção entre computação em nuvem e segurança da informação, analisando os desafios enfrentados e as estratégias adotadas para garantir a proteção dos dados na era da computação em nuvem. O estudo começa com uma visão geral da computação em nuvem, incluindo modelos de serviço (IaaS, PaaS, SaaS) e suas vantagens em termos de escalabilidade e flexibilidade. São discutidos os principais desafios de segurança relacionados à computação em nuvem, como a proteção de dados sensíveis, a gestão de identidades e acessos, e a conformidade regulatória. A pesquisa analisa as estratégias e tecnologias utilizadas para mitigar esses desafios, como criptografia de dados, monitoramento de tráfego, e políticas de segurança baseadas em nuvem. Além disso, são explorados casos de estudo de empresas que implementaram com sucesso soluções de segurança na nuvem. O trabalho conclui destacando a importância da colaboração entre provedores de nuvem e clientes na garantia de uma infraestrutura segura e confiável para armazenamento e processamento de dados.",
+            "palavras_chave": "SD; software; nuvem",
+            "data_entrega": "2024-05-25T10:54:07-03:00",
+            "arquivo": "/media/aula03_B3oBkHa.pdf",
+            "nota_final": 92.0,
+            "area_concentração": "SD",
+            "autor": 18,
+            "orientador": 14,
+            "coorientador": 5,
+            "banca": [
+                1,
+                6,
+                8
+            ]
+        },
+        {
+            "id": 23,
+            "titulo": "Inteligência Artificial e Ética: Implicações e Desafios",
+            "resumo": "Este trabalho de conclusão de curso examina as implicações éticas do uso da inteligência artificial (IA), analisando os desafios e dilemas éticos enfrentados na aplicação dessa tecnologia em diversos setores. O estudo começa com uma exploração dos avanços recentes em IA, incluindo aprendizado de máquina, redes neurais e algoritmos de decisão automatizada. São discutidos os principais dilemas éticos relacionados à IA, como viés algorítmico, privacidade dos dados, e responsabilidade por decisões automatizadas. A pesquisa investiga abordagens e frameworks éticos propostos por organizações e especialistas, visando garantir o uso responsável e ético da IA. Além disso, são explorados casos de estudo de aplicação de IA em áreas como saúde, justiça e automação. O trabalho conclui ressaltando a importância da reflexão ética contínua e da adoção de práticas responsáveis no desenvolvimento e uso da inteligência artificial para benefício da sociedade.",
+            "palavras_chave": "IA; software",
+            "data_entrega": "2024-05-25T10:55:14-03:00",
+            "arquivo": "/media/aula03_a0Vs554.pdf",
+            "nota_final": 92.0,
+            "area_concentração": "IA",
+            "autor": 19,
+            "orientador": 5,
+            "coorientador": 1,
+            "banca": [
+                5,
+                8,
+                13
+            ]
+        },
+        {
+            "id": 24,
+            "titulo": "Desenvolvimento de Aplicações Móveis e Experiência do Usuário: Desafios e Estratégias",
+            "resumo": "Este trabalho de conclusão de curso explora o desenvolvimento de aplicações móveis e os desafios relacionados à experiência do usuário (UX), analisando estratégias para garantir interfaces intuitivas e funcionais em dispositivos móveis. O estudo começa com uma análise da crescente importância das aplicações móveis em diversos setores, destacando a necessidade de interfaces responsivas, designs atrativos e desempenho otimizado. São discutidos os principais desafios enfrentados no desenvolvimento de aplicações móveis, como a compatibilidade com diferentes dispositivos, a gestão de dados em tempo real e a otimização para baixo consumo de energia. A pesquisa inclui a revisão de técnicas de UX design, como testes de usabilidade, prototipagem iterativa e análise de feedback dos usuários. Através da implementação de um aplicativo móvel em um ambiente de teste, são demonstradas estratégias práticas para melhorar a experiência do usuário. O trabalho conclui enfatizando a importância de colocar o usuário no centro do processo de desenvolvimento para criar aplicações móveis eficazes e satisfatórias.",
+            "palavras_chave": "UX; software",
+            "data_entrega": "2024-05-25T10:56:03-03:00",
+            "arquivo": "/media/aula03_AliGrnd.pdf",
+            "nota_final": 40.0,
+            "area_concentração": "Desenvolvimento de Software",
+            "autor": 20,
+            "orientador": 12,
+            "coorientador": 13,
+            "banca": [
+                12,
+                13,
+                14
+            ]
+        },
+        {
+            "id": 25,
+            "titulo": "Machine Learning na Análise de Dados Biomédicos: Aplicações e Desafios",
+            "resumo": "Este trabalho de conclusão de curso investiga as aplicações de machine learning na análise de dados biomédicos, explorando os desafios técnicos e éticos associados ao uso dessa tecnologia em saúde. O estudo começa com uma introdução aos avanços recentes em machine learning, incluindo algoritmos de aprendizado supervisionado e não supervisionado, redes neurais e processamento de linguagem natural. São discutidas as oportunidades de aplicação de machine learning na análise de dados biomédicos, como diagnóstico médico, predição de doenças e descoberta de biomarcadores. A pesquisa analisa os desafios enfrentados, como a interpretabilidade dos modelos, a qualidade dos dados e a privacidade dos pacientes. Além disso, são explorados casos de estudo de sucesso de aplicação de machine learning em instituições de saúde. O trabalho conclui destacando a importância da colaboração interdisciplinar entre profissionais de saúde, cientistas de dados e éticos para garantir o uso responsável e eficaz do machine learning na análise de dados biomédicos",
+            "palavras_chave": "IA; software",
+            "data_entrega": "2024-05-25T10:58:01-03:00",
+            "arquivo": "/media/aula03_TQ4spK3.pdf",
+            "nota_final": 68.0,
+            "area_concentração": "IA",
+            "autor": 21,
+            "orientador": 5,
+            "coorientador": 8,
+            "banca": [
+                1,
+                4,
+                5
+            ]
+        },
+        {
+            "id": 26,
+            "titulo": "Realidade Virtual e Simulações Interativas: Aplicações e Potenciais",
+            "resumo": "Este trabalho de conclusão de curso examina as aplicações da realidade virtual (RV) e simulações interativas em diferentes campos, explorando seus potenciais benefícios e desafios. O estudo começa com uma visão geral da tecnologia de RV, incluindo dispositivos de visualização, interfaces de interação e ambientes virtuais. São discutidas as aplicações da RV em áreas como treinamento, educação, entretenimento e saúde, destacando como a imersão virtual pode melhorar a experiência do usuário e facilitar o aprendizado. A pesquisa analisa os desafios técnicos enfrentados na implementação de ambientes virtuais realistas, como requisitos de hardware, latência e sensação de presença. Além disso, são explorados casos de estudo de sucesso de aplicação de RV em diferentes setores. O trabalho conclui ressaltando o potencial transformador da RV e simulações interativas para criar experiências envolventes e impactantes em diversas áreas da vida cotidiana e profissional.",
+            "palavras_chave": "Realidade Virtual; software",
+            "data_entrega": "2024-05-25T10:59:16-03:00",
+            "arquivo": "/media/aula03_Lbew36I.pdf",
+            "nota_final": 92.0,
+            "area_concentração": "Realidade Virtual",
+            "autor": 22,
+            "orientador": 1,
+            "coorientador": 8,
+            "banca": [
+                1,
+                5,
+                6,
+                8
+            ]
+        },
+        {
+            "id": 27,
+            "titulo": "Estratégias de Investimento em Criptoativos: Análise de Riscos e Oportunidades",
+            "resumo": "Este trabalho de conclusão de curso aborda estratégias de investimento em criptoativos, com foco na análise de riscos e oportunidades nesse mercado em constante evolução. O estudo começa com uma introdução aos criptoativos, incluindo criptomoedas, tokens digitais e ativos blockchain, e explora seu papel no panorama financeiro atual. São discutidas as principais estratégias de investimento, como investimento de longo prazo, trading ativo e diversificação de portfólio. A pesquisa analisa os riscos associados aos criptoativos, como volatilidade de preços, regulamentação e segurança cibernética, e propõe metodologias de análise de riscos para investidores. Além disso, são exploradas oportunidades emergentes, como DeFi (finanças descentralizadas) e NFTs (tokens não fungíveis). O trabalho conclui destacando a importância da educação financeira e da avaliação criteriosa de riscos ao investir em criptoativos.",
+            "palavras_chave": "Finanças; software; gestão",
+            "data_entrega": "2024-05-25T11:00:32-03:00",
+            "arquivo": "/media/aula03_CV2pXBO.pdf",
+            "nota_final": 68.0,
+            "area_concentração": "Finanças",
+            "autor": 23,
+            "orientador": 13,
+            "coorientador": 12,
+            "banca": [
+                8,
+                12,
+                13
+            ]
+        },
+        {
+            "id": 28,
+            "titulo": "Aplicações da Internet das Coisas (IoT) na Agricultura: Otimização e Sustentabilidade",
+            "resumo": "Este trabalho de conclusão de curso investiga as aplicações da Internet das Coisas (IoT) na agricultura, explorando como essa tecnologia pode otimizar processos e promover a sustentabilidade no setor agrícola. O estudo começa com uma visão geral das soluções de IoT disponíveis para a agricultura, incluindo monitoramento de cultivos, gestão de recursos hídricos e automação de maquinário agrícola. São discutidos os benefícios da IoT na agricultura, como aumento da eficiência, redução de desperdícios e melhorias na tomada de decisões. A pesquisa analisa os desafios enfrentados na implementação de soluções de IoT agrícola, como conectividade em áreas rurais e interoperabilidade de dispositivos. Além disso, são explorados casos de estudo de sucesso de adoção de IoT em fazendas e plantações. O trabalho conclui ressaltando o potencial transformador da IoT para impulsionar a agricultura inteligente e sustentável.",
+            "palavras_chave": "IoT; Software",
+            "data_entrega": "2024-05-25T11:02:01-03:00",
+            "arquivo": "/media/aula03_cyCCba1.pdf",
+            "nota_final": 45.0,
+            "area_concentração": "IoT",
+            "autor": 24,
+            "orientador": 1,
+            "coorientador": 13,
+            "banca": [
+                4,
+                5,
+                6
+            ]
+        },
+        {
+            "id": 29,
+            "titulo": "Arquiteturas de Sistemas Distribuídos para Aplicações Financeiras: Desafios e Estratégias",
+            "resumo": "Este trabalho de conclusão de curso aborda as arquiteturas de sistemas distribuídos aplicadas a aplicações financeiras, analisando os desafios técnicos e as estratégias para garantir a escalabilidade e a confiabilidade desses sistemas. O estudo começa com uma introdução às aplicações financeiras distribuídas, incluindo sistemas de pagamentos, bolsas de valores e plataformas de trading. São discutidas as arquiteturas tradicionais e emergentes de sistemas distribuídos, como microsserviços, computação em nuvem e blockchain, e suas vantagens e desafios específicos para aplicações financeiras. A pesquisa analisa os requisitos de desempenho, segurança e compliance exigidos nesse contexto, e propõe estratégias para garantir a integridade e a disponibilidade dos sistemas. Além disso, são explorados casos de estudo de sucesso de implementação de arquiteturas distribuídas em instituições financeiras. O trabalho conclui enfatizando a importância da arquitetura adequada na garantia da eficiência e da resiliência dos sistemas financeiros distribuídos.",
+            "palavras_chave": "Finanças; software; SD",
+            "data_entrega": "2024-05-25T11:02:51-03:00",
+            "arquivo": "/media/aula03_z9kdoqm.pdf",
+            "nota_final": 95.0,
+            "area_concentração": "SD",
+            "autor": 25,
+            "orientador": 5,
+            "coorientador": 12,
+            "banca": [
+                5,
+                6,
+                12,
+                13
+            ]
+        },
+        {
+            "id": 31,
+            "titulo": "Blockchain e Finanças Descentralizadas (DeFi): Desafios e Oportunidades",
+            "resumo": "Este trabalho de conclusão de curso explora a interseção entre blockchain e finanças descentralizadas (DeFi), analisando os desafios e oportunidades dessa nova era financeira baseada em tecnologias descentralizadas. O estudo começa com uma introdução ao blockchain e seus princípios fundamentais de transparência, imutabilidade e descentralização. São discutidos os conceitos-chave da DeFi, como empréstimos peer-to-peer, staking, yield farming e criação de tokens. A pesquisa analisa os desafios técnicos e regulatórios enfrentados pela DeFi, como segurança dos contratos inteligentes, gestão de riscos e conformidade legal. Além disso, são exploradas as oportunidades de inovação na DeFi, como acesso financeiro global, redução de intermediários e novos modelos de negócio. O trabalho conclui destacando a importância da educação e da governança na evolução sustentável da DeFi, visando proporcionar benefícios significativos para a inclusão financeira e a eficiência dos mercados.",
+            "palavras_chave": "Finanças; software; gestão",
+            "data_entrega": "2024-05-25T11:03:43-03:00",
+            "arquivo": "/media/aula03_xoQ4Mi0.pdf",
+            "nota_final": 82.0,
+            "area_concentração": "Finanças",
+            "autor": 26,
+            "orientador": 5,
+            "coorientador": 13,
+            "banca": [
+                8,
+                13,
+                12,
+                5
+            ]
+        }
+    ]
+}
